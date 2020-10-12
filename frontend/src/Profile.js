@@ -3,8 +3,8 @@ import Avatar from '@material-ui/core/Avatar';
 import './Profile.css'
 import Button from 'react-bootstrap/Button'
 import { UserContext } from './App'
-import { Link ,useHistory} from 'react-router-dom'
-import AddCircleIcon from '@material-ui/icons/AddCircle';
+import { Link, useHistory } from 'react-router-dom'
+import AddIcon from '@material-ui/icons/Add';
 import Navbar from 'react-bootstrap/esm/Navbar';
 
 function Profile() {
@@ -35,7 +35,7 @@ function Profile() {
                         <div className='img_box' >
                             <Avatar src={state.pic} style={{ height: '150px', width: '150px', objectFit: 'contain', borderStyle: 'solid', borderColor: '#b0bec5' }} />
                           <Link to="/editprofilepic">  <div id="profileicon" >
-                        <AddCircleIcon style={{fontSize:'40px'}} className="addicon" />
+                        <AddIcon style={{fontSize:'40px'}} className="addicon" />
                             </div>
                             </Link>
                         </div>
