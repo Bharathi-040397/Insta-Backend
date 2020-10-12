@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button'
 import { UserContext } from './App'
 import { Link, useHistory } from 'react-router-dom'
 import AddIcon from '@material-ui/icons/Add';
-import Navbar from 'react-bootstrap/esm/Navbar';
+
 
 function Profile() {
     const [post, setPost] = useState([])
