@@ -4,7 +4,7 @@ import './Profile.css'
 import Button from 'react-bootstrap/Button'
 import { UserContext } from './App'
 import { Link, useHistory } from 'react-router-dom'
-import AddIcon from '@material-ui/icons/Add';
+
 
 
 function Profile() {
@@ -35,7 +35,7 @@ function Profile() {
                         <div className='img_box' >
                             <Avatar src={state.pic} style={{ height: '150px', width: '150px', objectFit: 'contain', borderStyle: 'solid', borderColor: '#b0bec5' }} />
                           <Link to="/editprofilepic">  <div id="profileicon" >
-                        <AddIcon style={{fontSize:'40px'}} className="addicon" />
+                          <i className="large material-icons" style={{fontSize:'40px'}} id="addicon">Add</i>
                             </div>
                             </Link>
                         </div>
