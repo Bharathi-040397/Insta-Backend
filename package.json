@@ -7,15 +7,12 @@
     "node": "12.x"
   },
   "scripts": {
-    "start": "node server.js",
-    "Backend": "nodemon server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "start":"node server.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Bharathi",
   "license": "ISC",
   "dependencies": {
-    "babel-cli": "6.26.0",
-    "babel-preset-env": "1.7.0",
     "bcryptjs": "^2.4.3",
     "env": "0.0.2",
     "express": "^4.17.1",
