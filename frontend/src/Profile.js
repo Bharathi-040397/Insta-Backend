@@ -4,6 +4,7 @@ import './Profile.css'
 import Button from 'react-bootstrap/Button'
 import { UserContext } from './App'
 import { Link, useHistory } from 'react-router-dom'
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
 
 
@@ -35,7 +36,7 @@ function Profile() {
                         <div className='img_box' >
                             <Avatar src={state.pic} style={{ height: '150px', width: '150px', objectFit: 'contain', borderStyle: 'solid', borderColor: '#b0bec5' }} />
                           <Link to="/editprofilepic">  <div id="profileicon" >
-                          <i className="large material-icons" style={{fontSize:'40px'}} id="addicon">Add</i>
+                          <AddCircleOutlineIcon style={{fontSize:'40px'}} className="addicon" />
                             </div>
                             </Link>
                         </div>
