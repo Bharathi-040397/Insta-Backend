@@ -68,7 +68,6 @@ router.get('/mypost', requireLogin, (request, response) => {
     })
 })
 
-
 router.put('/like', requireLogin, (request, response) => {
     Post.findByIdAndUpdate(request.body.postId, {
         $push: { likes: request.user._id }
@@ -82,7 +81,7 @@ router.put('/like', requireLogin, (request, response) => {
         else
         {
             response.json({result})
-            }
+        }
     })
 
 })
